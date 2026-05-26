@@ -1,0 +1,15 @@
+[app]
+title = Apple Detector
+package.name = appledetector
+package.domain = org.example 
+source.dir = .
+source.include_exts = py,png,jpg,kv,atlas,onnx
+version = 1.0
+requirements = python3,kivy,opencv-python,numpy,pillow,onnxruntime
+orientation = portrait
+android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
+android.api = 30
+android.minapi = 24
+android.ndk = 25b
+android.sdk = 31
+p4a.branch = master
