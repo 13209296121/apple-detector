@@ -1,7 +1,7 @@
 [app]
 title = Apple Detector
 package.name = appledetector
-package.domain = org.example 
+package.domain = org.example
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,onnx
 version = 1.0
@@ -12,4 +12,5 @@ android.api = 30
 android.minapi = 24
 android.ndk = 25b
 android.sdk = 31
+android.accept_sdk_license = True
 p4a.branch = master
