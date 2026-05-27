@@ -14,6 +14,8 @@ jobs:
           sudo apt update
           sudo apt install -y zip unzip openjdk-11-jdk
       - name: Build APK
+        env:
+          P4A_ACCEPT_SDK_LICENSE: 1
         run: buildozer android debug
       - name: Upload APK
         uses: actions/upload-artifact@v4
