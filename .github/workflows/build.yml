@@ -8,14 +8,15 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - name: Install Buildozer
+      - name: Install Dependencies
         run: |
           pip install buildozer
           sudo apt update
           sudo apt install -y zip unzip openjdk-11-jdk
+      - name: Accept Android Licenses
+        run: |
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
       - name: Build APK
-        env:
-          P4A_ACCEPT_SDK_LICENSE: 1
         run: buildozer android debug
       - name: Upload APK
         uses: actions/upload-artifact@v4
