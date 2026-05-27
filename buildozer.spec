@@ -11,6 +11,6 @@ android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 android.api = 30
 android.minapi = 24
 android.ndk = 25b
-android.sdk = 31
+android.sdk =
 android.accept_sdk_license = True
 p4a.branch = master
